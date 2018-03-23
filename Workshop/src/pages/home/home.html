@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Workshop Beacons
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="startRanging()">Start ranging</button>
+  <button ion-button (click)="refreshData()">Refresh data</button>
+  <h1>Beacon Information:</h1>
+  <div *ngFor="let beacon of beacons">
+    <ion-card>
+      <ion-card-header>Beacon UUID: {{beacon.uuid}}</ion-card-header>
+      <ion-card-content>
+          <p>Proximity: {{beacon.proximity}}</p>
+          <p>Signal strenght(RSSI): {{beacon.rssi}}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
