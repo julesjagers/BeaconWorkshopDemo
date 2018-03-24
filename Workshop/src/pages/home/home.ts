@@ -16,8 +16,11 @@ export class HomePage {
   }
 
   startRanging(){
-    //UUID: B9407F30-F5F8-466E-AFF9-25556B57FE6D
+    // ionic cordova plugin add cordova-plugin-ibeacon
+    // npm install --save @ionic-native/ibeacon
+
     //Identifier: d8fe5f4bd538c9c08c033e4b96ac9a1a
+    //UUID: B9407F30-F5F8-466E-AFF9-25556B57FE6D
 
     // Workshop code goes here
   }
