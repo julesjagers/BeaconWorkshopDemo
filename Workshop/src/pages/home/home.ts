@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { ApplicationRef } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { IBeacon, IBeaconPluginResult, Beacon } from '@ionic-native/ibeacon';
-import { Observable } from "rxjs/Rx";
+import { IBeacon, Beacon } from '@ionic-native/ibeacon';
 
 
 @Component({
@@ -10,7 +9,6 @@ import { Observable } from "rxjs/Rx";
   templateUrl: 'home.html'
 })
 export class HomePage {
-  observableRegion:Observable<IBeaconPluginResult>
   intervalId:number;
   beacons:Beacon[]
 
@@ -20,7 +18,7 @@ export class HomePage {
   startRanging(){
     //UUID: B9407F30-F5F8-466E-AFF9-25556B57FE6D
     //Identifier: d8fe5f4bd538c9c08c033e4b96ac9a1a
-    
+
     // Workshop code goes here
   }
 
